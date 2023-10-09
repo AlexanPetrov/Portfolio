@@ -42,6 +42,7 @@ export default class PortfolioCreator {
           {
             title: "Portfolio Website",
             icons: ["fa-brands fa-github"],
+            links: ["https://github.com/AlexanPetrov/Portfolio"],
           },
         ],
       },
@@ -90,12 +91,28 @@ export default class PortfolioCreator {
         const icons = document.createElement("div");
         icons.className = "icons";
 
-        hoverItem.icons.forEach((icon) => {
+        // hoverItem.icons.forEach((icon) => {
+        //   const aIcon = document.createElement("a");
+        //   aIcon.href = "#";
+        //   aIcon.className = "icon";
+        //   aIcon.target = "_blank";
+        //   // aIcon.title = "project";
+        //   const iIcon = document.createElement("i");
+        //   iIcon.className = icon;
+        //   aIcon.appendChild(iIcon);
+        //   icons.appendChild(aIcon);
+        // });
+
+        hoverItem.icons.forEach((icon, index) => {
           const aIcon = document.createElement("a");
-          aIcon.href = "#";
+
+          aIcon.href =
+            hoverItem.links && hoverItem.links[index]
+              ? hoverItem.links[index]
+              : "https://github.com/AlexanPetrov/Portfolio";
+
           aIcon.className = "icon";
           aIcon.target = "_blank";
-          // aIcon.title = "project";
           const iIcon = document.createElement("i");
           iIcon.className = icon;
           aIcon.appendChild(iIcon);
