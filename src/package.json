@@ -1,0 +1,25 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "nodemon -w ./ -e js,html,css --exec 'http-server -p 8080'",
+    "build": "your_build_command_here",
+    "serve": "serve -s build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "nodemon": "^3.0.1",
+    "serve": "^14.2.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}

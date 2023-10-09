@@ -1,0 +1,76 @@
+.btn-container {
+    display: flex;
+    align-self: flex-start;
+}
+  
+.cv-btn {
+	border-radius: 50px;
+	color: inherit;
+	font-weight: 600;
+	position: relative;
+	border: 1px solid var(--color-secondary);
+	display: flex;
+	align-self: flex-start;
+	align-items: center;
+	overflow: hidden;
+}
+  
+.cv-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: all .4s ease-in-out;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-secondary);
+}
+
+.text-btn {
+	padding: 0 2rem;
+}
+
+.cv-icon {
+	background-color: var(--color-secondary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	padding: 1rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+.cv-icon i {
+	font-size: 1.5rem;
+}
+
+.cv-btn:hover::before {
+	transform: scaleX(1);
+	transition: all .4s ease-in-out;
+}
+
+.cv-btn:hover .cv-icon i {
+	color: var(--color-three);
+}
+
+button.cv-btn {
+	background: transparent;
+	border: 1px solid var(--color-secondary); 
+	font-family: inherit; 
+	cursor: pointer;
+}
+  
+button.cv-btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+button.cv-btn .text-btn {
+	font-family: Arial, sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+}

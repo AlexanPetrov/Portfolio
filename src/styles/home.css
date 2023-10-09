@@ -1,0 +1,113 @@
+.home-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+  }
+  
+  .home-content .home-shape {
+    transition: all .4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-three);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    clip-path: circle(13.8% at 87% 76%);
+  }
+  
+  .home-content .right-home {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10rem;
+    justify-content: center;
+    justify-self: end;
+    padding-left: 5rem;
+    width: 35rem;
+    height: 40rem;
+  }
+  
+  .home-content .right-home .image {
+    border-radius: 14px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--color-black);
+    transition: all .4s ease-in-out;
+  }
+  
+  .home-content .right-home .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s ease-in-out;
+    filter: grayscale(100%);
+  }
+  
+  .home-content .right-home .image img:hover {
+    filter: grayscale(0);
+  }
+  
+  .home-content .left-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 3.5rem;
+  }
+
+	.home-content .left-home .header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+  
+  .home-content .left-home .header .name {
+    color: var(--color-secondary);
+    font-size: 2.9rem;
+    font-style: italic;
+  }
+  
+  .home-content .left-home .header .job {
+    color: var(--color-three);
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+  
+  .home-content .left-home p {
+    margin: 1.5rem 0;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+    overflow-x: visible; /* */
+  }
+ 
+  @media screen and (max-width: 1300px) {
+    .home-content .right-home .image {
+      /* width: 70%;
+      height: auto;  
+      display: none; */
+      z-index: -1;
+    }
+
+    .home-content {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .right-home {
+      order: -1; 
+      margin-top: 2rem; 
+      right: auto; 
+      padding-left: 0; 
+      width: 100%; 
+    }
+  
+    .left-home {
+      margin-top: 0; 
+    }
+  }
+  
