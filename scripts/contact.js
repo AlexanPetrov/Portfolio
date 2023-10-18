@@ -326,13 +326,18 @@ export default class ContactCreator {
 
   async sendDataToBackend(payload) {
     try {
-      const response = await fetch("http://127.0.0.1:3000/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      // local response
+      // const response = await fetch("http://127.0.0.1:3000/submit", {
+      const response = await fetch(
+        "https://portfolio-submissions.onrender.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (response.ok) {
         alert("Message sent successfully!");
