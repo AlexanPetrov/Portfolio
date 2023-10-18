@@ -329,7 +329,7 @@ export default class ContactCreator {
       // local response
       // const response = await fetch("http://127.0.0.1:3000/submit", {
       const response = await fetch(
-        "https://portfolio-submissions.onrender.com/submit",
+        "https://portfolio-submissions.onrender.com",
         {
           method: "POST",
           headers: {
