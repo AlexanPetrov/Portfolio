@@ -355,6 +355,7 @@ export default class ContactCreator {
 
       console.log(`Received response, status: ${response.status}`);
 
+      console.log("hi");
       this.clearFields();
 
       if (response.ok) {
