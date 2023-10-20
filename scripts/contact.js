@@ -325,30 +325,25 @@ export default class ContactCreator {
   }
 
   async sendDataToBackend(payload) {
-    try {
-      const response = await fetch(
-        "https://portfolio-submissions.onrender.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        }
-      );
+    const response = await fetch("https://portfolio-submissions.onrender.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
 
-      if (response.ok) {
-        alert("Message sent successfully!");
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("subject").value = "";
-        document.getElementById("area-id").value = "";
-      } else {
-        const data = await response.json();
-        alert(`An error occurred: ${data.error || "Unknown error"}`);
-      }
-    } catch (error) {
-      alert("An error occurred. Please try again later.");
+    console.log(response);
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("area-id").value = "";
+    } else {
+      const data = await response.json();
+      alert(`An error occurred: ${data.error || "Unknown error"}`);
     }
   }
 
