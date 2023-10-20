@@ -352,7 +352,7 @@ export default class ContactCreator {
 
       console.log(`Received response, status: ${response.status}`);
 
-      clearFields();
+      this.clearFields();
 
       if (response.ok) {
         alert("Message sent successfully!");
@@ -363,7 +363,7 @@ export default class ContactCreator {
       }
     } catch (error) {
       console.log("Caught a network or JSON error:", error);
-      clearFields();
+      this.clearFields();
       alert("An error occurred. Please try again later.");
     }
   }
