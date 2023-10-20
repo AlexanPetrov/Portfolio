@@ -8,6 +8,8 @@ export default class ContactCreator {
     this.section.className = "section sec-5";
     this.section.id = "contact-id";
 
+    this.clearFields = this.clearFields.bind(this);
+
     this.section.appendChild(this.contactContainer);
 
     document.addEventListener("DOMContentLoaded", () => {
