@@ -8,8 +8,6 @@ export default class ContactCreator {
     this.section.className = "section sec-5";
     this.section.id = "contact-id";
 
-    this.clearFields = this.clearFields.bind(this);
-
     this.section.appendChild(this.contactContainer);
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -326,18 +324,12 @@ export default class ContactCreator {
     }
   }
 
-  clearFields() {
-    console.log("ClearFields is being executed");
-    try {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("subject").value = "";
-      document.getElementById("area-id").value = "";
-      console.log("Fields cleared.");
-    } catch (fieldClearError) {
-      console.log("Error when clearing fields:", fieldClearError);
-    }
-  }
+  clearFields = () => {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("area-id").value = "";
+  };
 
   async sendDataToBackend(payload) {
     try {
@@ -353,21 +345,17 @@ export default class ContactCreator {
         }
       );
 
-      console.log(`Received response, status: ${response.status}`);
+      clearFields();
 
-      console.log("hi");
-      this.clearFields();
+      console.log(`Received response, status: ${response.status}`);
 
       if (response.ok) {
         alert("Message sent successfully!");
       } else {
         const data = await response.json();
-        console.log(`Server error: ${data.error || "Unknown error"}`);
         alert(`An error occurred: ${data.error || "Unknown error"}`);
       }
     } catch (error) {
-      console.log("Caught a network or JSON error:", error);
-      this.clearFields();
       alert("An error occurred. Please try again later.");
     }
   }
