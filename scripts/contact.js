@@ -336,6 +336,7 @@ export default class ContactCreator {
           body: JSON.stringify(payload),
         }
       );
+      console.log(payload);
 
       if (response.ok) {
         alert("Message sent successfully!");
