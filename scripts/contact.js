@@ -324,16 +324,8 @@ export default class ContactCreator {
     }
   }
 
-  clearFields = () => {
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("area-id").value = "";
-  };
-
   async sendDataToBackend(payload) {
     try {
-      console.log("Sending payload:", payload);
       const response = await fetch(
         "https://portfolio-submissions.onrender.com",
         {
@@ -345,12 +337,12 @@ export default class ContactCreator {
         }
       );
 
-      clearFields();
-
-      console.log(`Received response, status: ${response.status}`);
-
       if (response.ok) {
         alert("Message sent successfully!");
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("area-id").value = "";
       } else {
         const data = await response.json();
         alert(`An error occurred: ${data.error || "Unknown error"}`);
