@@ -327,6 +327,7 @@ export default class ContactCreator {
   }
 
   clearFields() {
+    console.log("ClearFields is being executed");
     try {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
