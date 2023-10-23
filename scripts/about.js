@@ -31,7 +31,7 @@ export default class AboutCreator {
 
     const pAbout = document.createElement("p");
     pAbout.textContent =
-      "I graduated top of my class taking challenging mathematics and computer science courses while gaining practical experience through a software engineering internship, a full-stack bootcamp and by carrying out exciting independent projects.";
+      "I graduated top of my class taking challenging mathematics and computer science courses while gaining practical experience through a software engineering internship, a full-stack bootcamp and a number of exciting independent & team projects.";
     this.leftAbout.appendChild(pAbout);
 
     const buttonCreator = new ButtonCreator();

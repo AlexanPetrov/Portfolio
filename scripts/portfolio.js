@@ -109,7 +109,7 @@ export default class PortfolioCreator {
           aIcon.href =
             hoverItem.links && hoverItem.links[index]
               ? hoverItem.links[index]
-              : "https://github.com/AlexanPetrov/Portfolio/tree/main";
+              : "https://github.com/AlexanPetrov";
 
           aIcon.className = "icon";
           aIcon.target = "_blank";
