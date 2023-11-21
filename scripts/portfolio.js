@@ -47,12 +47,16 @@ export default class PortfolioCreator {
         ],
       },
       {
-        imageSrc: "img/cat.jpeg",
+        imageSrc: "img/gastrographpic.jpeg",
         imageAlt: "recipe website",
         hoverItems: [
           {
             title: "Gastrograph",
             icons: ["fa-brands fa-github", "fa-solid fa-globe"],
+            links: [
+              "https://github.com/AlexanPetrov/gastrograph",
+              "https://alexanpetrov.github.io/gastrograph",
+            ],
           },
         ],
       },
