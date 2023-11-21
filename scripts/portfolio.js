@@ -61,12 +61,13 @@ export default class PortfolioCreator {
         ],
       },
       {
-        imageSrc: "img/cat.jpeg",
-        imageAlt: "cat",
+        imageSrc: "img/AIpic.webp",
+        imageAlt: "AI",
         hoverItems: [
           {
             title: "Coming Soon",
-            icons: ["fa-brands fa-github", "fa-brands fa-youtube"],
+            icons: ["fa-solid fa-circle-pause"],
+            links: ["https://www.alexanderpetrovski.com/"],
           },
         ],
       },
