@@ -168,7 +168,7 @@ export default class AboutCreator {
         position: "Independent Developer",
         organization: "Unaffiliated",
         description:
-          "Leveraged a purposeful hiatus to expand my skillset through challenging online courses and complex engineering projects, significantly augmenting my ability to adapt, innovate, and maintain a high standard of excellence in software development.",
+          "Leveraging a purposeful hiatus to expand my skillset through challenging online courses and complex engineering projects, significantly augmenting my ability to adapt, innovate, and maintain a high standard of excellence in software development.",
       },
     ];
 

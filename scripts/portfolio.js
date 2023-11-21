@@ -48,11 +48,11 @@ export default class PortfolioCreator {
       },
       {
         imageSrc: "img/cat.jpeg",
-        imageAlt: "cat",
+        imageAlt: "recipe website",
         hoverItems: [
           {
-            title: "Coming Soon",
-            icons: ["fa-brands fa-github", "fa-brands fa-youtube"],
+            title: "Gastrograph",
+            icons: ["fa-brands fa-github", "fa-solid fa-globe"],
           },
         ],
       },
