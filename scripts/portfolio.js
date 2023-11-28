@@ -55,7 +55,7 @@ export default class PortfolioCreator {
             icons: ["fa-brands fa-github", "fa-solid fa-globe"],
             links: [
               "https://github.com/AlexanPetrov/gastrograph",
-              "https://alexanpetrov.github.io/gastrograph",
+              "https://brilliant-cuchufli-19cf17.netlify.app",
             ],
           },
         ],
