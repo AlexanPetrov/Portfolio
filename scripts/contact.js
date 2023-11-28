@@ -262,7 +262,8 @@ export default class ContactCreator {
     inputSubject.id = "subject";
 
     const inputMessage = document.createElement("textarea");
-    inputMessage.placeholder = "Message";
+    inputMessage.placeholder =
+      "Message (Free instance types will spin down with inactivity. Please, be patient!)";
     inputMessage.name = "message";
     inputMessage.id = "area-id";
     inputMessage.cols = "15";
