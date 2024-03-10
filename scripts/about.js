@@ -98,6 +98,8 @@ export default class AboutCreator {
       { title: "Linux", percentage: "90%", className: "linux" },
       { title: "Pandas", percentage: "70%", className: "pandas" },
       { title: "NumPy", percentage: "75%", className: "numpy" },
+      { title: "Next.JS", percentage: "85", className: "next" },
+      { title: "Flask", percentage: "80", className: "flask" },
     ];
 
     skills.forEach((skill) => {
