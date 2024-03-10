@@ -16,7 +16,7 @@ export default class PortfolioCreator {
     this.portfolioText = document.createElement("p");
     this.portfolioText.className = "portfolio-text";
     this.portfolioText.textContent =
-      "I am committed to remaining at the forefront of emerging technologies and utilizing state-of-the-art tools while harnessing fundamental principles and practices of software engineering. Review my latest explorations herein and visit ";
+      "I am committed to remaining at the forefront of emerging technologies and utilizing state-of-the-art tools while harnessing fundamental principles and practices of software engineering. Review my latest explorations herein chronologically, and visit ";
     const spanLink = document.createElement("span");
     const aLink = document.createElement("a");
     aLink.href = "https://github.com/AlexanPetrov";
@@ -36,13 +36,16 @@ export default class PortfolioCreator {
 
     const portfolioItems = [
       {
-        imageSrc: "img/portfolioproject.avif",
-        imageAlt: "portfolio project",
+        imageSrc: "img/pullupnyc.jpeg",
+        imageAlt: "Pull Ups",
         hoverItems: [
           {
-            title: "Portfolio Website",
-            icons: ["fa-brands fa-github"],
-            links: ["https://github.com/AlexanPetrov/Portfolio"],
+            title: "Pull Up NYC",
+            icons: ["fa-brands fa-github", "fa-solid fa-globe"],
+            links: [
+              "https://github.com/AlexanPetrov/PullUpNYC",
+              "https://pull-up-nyc.vercel.app/",
+            ],
           },
         ],
       },
@@ -61,13 +64,13 @@ export default class PortfolioCreator {
         ],
       },
       {
-        imageSrc: "img/AIpic.webp",
-        imageAlt: "AI",
+        imageSrc: "img/portfolioproject.avif",
+        imageAlt: "portfolio project",
         hoverItems: [
           {
-            title: "Coming Soon",
-            icons: ["fa-solid fa-circle-pause"],
-            links: ["https://www.alexanderpetrovski.com/"],
+            title: "Portfolio Website",
+            icons: ["fa-brands fa-github"],
+            links: ["https://github.com/AlexanPetrov/Portfolio"],
           },
         ],
       },
