@@ -8,7 +8,7 @@ export default class ButtonCreator {
     a.target = "_blank";
     a.rel = "noopener";
     a.href =
-      "https://drive.google.com/file/d/1c6_rxxHphrVS7r4txonic5tGtFnpsDXG/view?usp=sharing";
+      "https://drive.google.com/file/d/1ht758HKabo-rjwVEQ6M1DnMNYrE43j63/view?usp=drive_link";
 
     const spanText = document.createElement("span");
     spanText.classList.add("text-btn");
