@@ -98,8 +98,8 @@ export default class AboutCreator {
       { title: "Linux", percentage: "90%", className: "linux" },
       { title: "Pandas", percentage: "70%", className: "pandas" },
       { title: "NumPy", percentage: "75%", className: "numpy" },
-      { title: "Next.JS", percentage: "85", className: "next" },
-      { title: "Flask", percentage: "80", className: "flask" },
+      { title: "Next.JS", percentage: "85%", className: "next" },
+      { title: "Flask", percentage: "80%", className: "flask" },
     ];
 
     skills.forEach((skill) => {
@@ -170,7 +170,7 @@ export default class AboutCreator {
         position: "Independent Developer",
         organization: "Unaffiliated",
         description:
-          "Leveraging a purposeful hiatus to expand my skillset through challenging online courses and complex engineering projects, significantly augmenting my ability to adapt, innovate, and maintain a high standard of excellence in software development.",
+          "Actively expanding my skillset through challenging online certification courses and complex engineering projects, significantly augmenting my ability to adapt, innovate, and maintain a high standard of excellence in software development.",
       },
     ];
 
