@@ -191,6 +191,14 @@
   width: 75%;
 }
 
+.about-stats .progress-bars .progress-bar .progress-container .progress span.next {
+  width: 85%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress span.flask {
+  width: 80%;
+}
+
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
