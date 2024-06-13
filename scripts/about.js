@@ -31,7 +31,7 @@ export default class AboutCreator {
 
     const pAbout = document.createElement("p");
     pAbout.textContent =
-      "I graduated top of my class taking challenging mathematics and computer science courses while gaining practical experience through a software engineering internship, a full-stack bootcamp and a number of exciting independent & team projects.";
+      "I graduated top of my class taking challenging mathematics and computer science courses while gaining practical experience through a software engineering internship, a full-stack bootcamp, professional certifications, and a number of exciting independent & team projects.";
     this.leftAbout.appendChild(pAbout);
 
     const buttonCreator = new ButtonCreator();
@@ -44,7 +44,7 @@ export default class AboutCreator {
     this.rightAbout.className = "right-about";
 
     const aboutItems = [
-      { largeText: "20+", smallText: "Projects\nCompleted" },
+      { largeText: "10+", smallText: "Projects &\nCertifications\nCompleted" },
       { largeText: "Bachelor", smallText: "Comp Sci\nCompleted" },
       { largeText: "Bootcamp", smallText: "Full-stack\nCompleted" },
       { largeText: "3 mos", smallText: "Internship\nCompleted" },
