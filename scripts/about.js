@@ -99,7 +99,9 @@ export default class AboutCreator {
       { title: "Pandas", percentage: "70%", className: "pandas" },
       { title: "NumPy", percentage: "75%", className: "numpy" },
       { title: "Next.JS", percentage: "85%", className: "next" },
-      { title: "Flask", percentage: "80%", className: "flask" },
+      { title: "FastAPI", percentage: "80%", className: "fastapi" },
+      { title: "PostgreSQL", percentage: "80%", className: "postgresql" },
+      { title: "AWS", percentage: "80%", className: "aws" },
     ];
 
     skills.forEach((skill) => {

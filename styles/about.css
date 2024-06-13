@@ -195,8 +195,16 @@
   width: 85%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-container .progress span.flask {
+.about-stats .progress-bars .progress-bar .progress-container .progress span.fastapi {
   width: 80%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress span.postgresql {
+  width: 85%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress span.aws {
+  width: 75%;
 }
 
 .timeline {
