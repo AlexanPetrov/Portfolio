@@ -101,7 +101,7 @@ export default class AboutCreator {
       { title: "Next.JS", percentage: "85%", className: "next" },
       { title: "FastAPI", percentage: "80%", className: "fastapi" },
       { title: "PostgreSQL", percentage: "80%", className: "postgresql" },
-      { title: "AWS", percentage: "80%", className: "aws" },
+      { title: "AWS", percentage: "75%", className: "aws" },
     ];
 
     skills.forEach((skill) => {
